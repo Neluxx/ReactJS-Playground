@@ -22,14 +22,6 @@ function Timer() {
     return () => clearTimeout(timer);
   });
 
-  const startTimer = () => {
-    setIsRunning(true);
-  };
-
-  const stopTimer = () => {
-    setIsRunning(false);
-  };
-
   const resetTimer = () => {
     setIsRunning(false);
     setTimeLeft(5);
@@ -58,13 +50,13 @@ function Timer() {
           </Form.Text>
         </Form.Group>
         <ButtonGroup>
-          <Button variant="danger" onClick={stopTimer}>
+          <Button variant="danger" onClick={() => setIsRunning(false)}>
             Stop
           </Button>
           <Button variant="warning" onClick={resetTimer}>
             Reset
           </Button>
-          <Button variant="success" onClick={startTimer}>
+          <Button variant="success" onClick={() => setIsRunning(true)}>
             Start
           </Button>
         </ButtonGroup>

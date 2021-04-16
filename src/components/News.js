@@ -1,12 +1,12 @@
 import React from "react";
 
-const Pomodoro = () => {
+function News() {
   return (
     <div className="text-center">
       <br />
-      <h1>Pomodoro</h1>
+      <h1>News</h1>
     </div>
   );
-};
+}
 
-export default Pomodoro;
+export default News;

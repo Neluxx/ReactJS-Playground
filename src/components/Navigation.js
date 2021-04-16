@@ -24,6 +24,9 @@ const Navigation = () => {
           <LinkContainer to="/counter">
             <Nav.Link>Counter</Nav.Link>
           </LinkContainer>
+          <LinkContainer to="/news">
+            <Nav.Link>News</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
