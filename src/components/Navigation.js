@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
       <LinkContainer to="/">
-        <Navbar.Brand>Focused</Navbar.Brand>
+        <Navbar.Brand>ReactJS-Playground</Navbar.Brand>
       </LinkContainer>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
