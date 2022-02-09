@@ -44,7 +44,7 @@ export default function UpdateProfile() {
 
   return (
     <>
-      <Card>
+      <Card className="w-25 mx-auto mt-5">
         <Card.Body>
           <h2 className="text-center mb-4">Update Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}

@@ -9,7 +9,7 @@ const Pomodoro = () => {
   const calculateSecondsToMinutes = () => {
     let minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft - minutes * 60;
-    return "hallo";
+    return seconds;
   };
 
   useEffect(() => {
